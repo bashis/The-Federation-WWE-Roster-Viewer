@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <person>
+    <id_string>9999</id_string>
+    <name>Vacant</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0001</id_string>
+    <name>Daniel Bryan</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0002</id_string>
+    <name>Jimmy Uso</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0003</id_string>
+    <name>Jey Uso</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0004</id_string>
+    <name>Heath Slater</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0005</id_string>
+    <name>Goldust</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0006</id_string>
+    <name>Ezekiel Jackson</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0007</id_string>
+    <name>Evan Bourne</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0008</id_string>
+    <name>Wade Barrett</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0009</id_string>
+    <name>Tyson Kidd</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0010</id_string>
+    <name>The Miz</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0011</id_string>
+    <name>The Great Khali</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0012</id_string>
+    <name>Ted DiBiase</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0013</id_string>
+    <name>Michael McGullicutty</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0014</id_string>
+    <name>Vince McMahon</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0015</id_string>
+    <name>Zack Ryder</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0016</id_string>
+    <name>The Big Show</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0017</id_string>
+    <name>JTG</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0018</id_string>
+    <name>Jack Swagger</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0019</id_string>
+    <name>Christian</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0020</id_string>
+    <name>Court Hawkins</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0021</id_string>
+    <name>Kofi Kingston</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0022</id_string>
+    <name>Kane</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0023</id_string>
+    <name>Trent Barretta</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0024</id_string>
+    <name>The Undertaker</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0025</id_string>
+    <name>Tyler Reks</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0026</id_string>
+    <name>Alex Riley</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0027</id_string>
+    <name>Brodus Clay</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0028</id_string>
+    <name>Johnny Curtis</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0029</id_string>
+    <name>Alberto Del Rio</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0030</id_string>
+    <name>Booker T</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0031</id_string>
+    <name>Cody Rhodes</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0032</id_string>
+    <name>David Otunga</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0033</id_string>
+    <name>Dolph Ziggler</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0034</id_string>
+    <name>Drew McIntyre</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0035</id_string>
+    <name>Epico</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0036</id_string>
+    <name>Hornswoggle</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0037</id_string>
+    <name>Hunico</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0038</id_string>
+    <name>Jinder Mahal</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0039</id_string>
+    <name>John Cena</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0040</id_string>
+    <name>John Laurenaitis</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0041</id_string>
+    <name>Justin Gabriel</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0042</id_string>
+    <name>Mark Henry</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0043</id_string>
+    <name>Mason Ryan</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0044</id_string>
+    <name>Matt Striker</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0045</id_string>
+    <name>Kevin Nash</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0046</id_string>
+    <name>Primo</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0047</id_string>
+    <name>Randy Orton</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0048</id_string>
+    <name>Rey Mysterio</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0049</id_string>
+    <name>Ricardo Rodriguez</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0050</id_string>
+    <name>R-Truth</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0051</id_string>
+    <name>Santino Marella</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0052</id_string>
+    <name>Sheamus</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0053</id_string>
+    <name>Sin Cara</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0054</id_string>
+    <name>Triple H</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0055</id_string>
+    <name>William Regal</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0056</id_string>
+    <name>Yoshi Tatsu</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0057</id_string>
+    <name>CM Punk</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0058</id_string>
+    <name>John Morrison</name>
+    <id>0</id>
+  </person>
+  <person>
+    <id_string>0059</id_string>
+    <name>Husky Harris</name>
+    <id>0</id>
+  </person>
+</ArrayOfPerson>

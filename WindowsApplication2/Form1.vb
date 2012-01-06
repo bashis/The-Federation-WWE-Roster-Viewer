@@ -98,38 +98,6 @@ Public Class Form1
 
     End Sub
 
-    Private Function filetoarray_ofpersons(ByVal filename As String)
-        Dim str As String = ""
-        Dim dim2 As Integer = -1
-        FileOpen(2, filename, OpenMode.Input)
-        Input(2, str)
-        FileClose(2)
-        Dim i, L As Integer
-
-        For i = 0 To str.Length - 1
-            If str(i) = "%" Then dim2 = dim2 + 1
-        Next
-        i = 0
-        L = 0
-
-
-        Dim separator() As String = {"%"} ' по % мы делим данные
-
-        Dim data() As String 'тут будет строка из текстбокса, разбитая на одномерный массив с данными
-        data = str.Split(separator, StringSplitOptions.RemoveEmptyEntries)
-        Dim FinalArray(dim2) As person ' сюда мы сформируем окончательный массив
-
-        For i = 0 To dim2 / 2
-            '  FinalArray.SetValue(data.GetValue(L), i
-            FinalArray(i).id_string = data(L)
-            L += 1
-            FinalArray(i).name = data(L)
-            L += 1
-        Next
-        Dim myVariantArray As Object
-        myVariantArray = FinalArray
-        Return myVariantArray
-    End Function
     Public Function filetoarray_oftitles(ByVal foldername As String)
         Dim str As String = ""
         Dim dim2 As Integer = -1
@@ -193,7 +161,10 @@ Public Class Form1
 
         '  load_images()
 
-        wrestlers = filetoarray_ofpersons(Path.Combine(pth, "renamed\ids\ids.txt"))
+        ' We can save the SimpleDatabase object somewhere else e.g. in the form class.
+        Dim db As Databases.SimpleDatabase(Of person) = New Databases.SimpleDatabase(Of person)("renamed\ids\ids.xml")
+        db.Load()
+        wrestlers = db.Data.ToArray()
 
         titleholders = filetoarray_ofstring(Path.Combine(pth, "sys\descriptions\h.txt"))
 
