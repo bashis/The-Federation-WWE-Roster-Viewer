@@ -1,0 +1,1 @@
+These are to be put into the C:\wrestlers folder. The path can be changed via editing the "path" string in the Main form of each app.
