@@ -1,4 +1,7 @@
-﻿Public Class About_Title
+﻿Imports System
+Imports System.IO
+
+Public Class About_Title
     Public titleid As Integer
     Dim num_of_columns As Integer = 3
     Dim table_content(1000, 3) As String
@@ -9,12 +12,12 @@
         header.Text = Form1.titlearray(titleid, 0)
         body.Top = header.Bottom + 5
         body.Left = header.Left
-        body.Text = readtitleinfo(Form1.pth & "sys\descriptions\" & titleid & "inf.txt")
+        body.Text = readtitleinfo(Path.Combine(Form1.pth, "sys\descriptions", titleid, "inf.txt"))
         listview1.Top = body.Bottom + 5
         listview1.Left = body.Left
         listview1.Width = Panel1.Width - (listview1.Left * 2)
         listview1.Height = Panel1.Height - listview1.Top - 10
-        readtitlehistory(Form1.pth & "sys\descriptions\" & titleid & "hi.txt")
+        readtitlehistory(Path.Combine(Form1.pth, "sys\descriptions", titleid, "hi.txt"))
         createtable()
     End Sub
     Private Function readtitleinfo(ByVal path As String)

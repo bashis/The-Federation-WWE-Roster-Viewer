@@ -1,4 +1,6 @@
-﻿Public Class About_Wrestler
+﻿Imports System.IO
+
+Public Class About_Wrestler
     Public Wrestler_id As String
 
     Private Sub About_Wrestler_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
@@ -6,10 +8,10 @@
         wrestler_image.Parent = Wrestler_Header
         namelabel.Text = Form1.wrestlers(Wrestler_id).name
         Try
-            wrestler_image.Image = Image.FromFile(Form1.pth & "fullsize\" & Form1.wrestlers(Wrestler_id).id_string & ".png")
+            wrestler_image.Image = Image.FromFile(Path.Combine(Form1.pth, "fullsize", Form1.wrestlers(Wrestler_id).id_string & ".png"))
         Catch ex As Exception
             Try
-                wrestler_image.Image = Image.FromFile(Form1.pth & "fullsize\9999.png")
+                wrestler_image.Image = Image.FromFile(Path.Combine(Form1.pth, "fullsize\9999.png"))
             Catch ex2 As Exception
             End Try
 

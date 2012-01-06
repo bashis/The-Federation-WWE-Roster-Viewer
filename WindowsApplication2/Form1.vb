@@ -1,6 +1,8 @@
-﻿Public Class Form1
+﻿Imports System.IO
+
+Public Class Form1
     Inherits System.Windows.Forms.Form
-    Public pth As String = "C:\wrestlers\" 'Application.StartupPath & "\"
+    Public pth As String = Application.StartupPath
     Dim pic_counter As Integer
     Dim nall As Integer
     Dim NUMBER_OF_TITLES As Integer = 6
@@ -63,13 +65,13 @@
         'titlearray(3, 0) = "Intercontinental Championship"
         'titlearray(4, 0) = "Tag Team Championship"
         'titlearray(5, 0) = "Tag Team Championship"
-        titlearray = filetoarray_oftitles(pth & "\sys\descriptions\")
+        titlearray = filetoarray_oftitles(Path.Combine(pth, "sys\descriptions"))
         For i = 0 To NUMBER_OF_TITLES - 1
             ' FileOpen(1, pth & "\sys\descriptions\" & i & ".txt", OpenMode.Input)
             'Input(1, titlearray(i, 1))
             'FileClose(1)
-            titlepic(i, 0) = Image.FromFile(pth & "sys\descriptions\" & i & ".png")
-            titlepic(i, 1) = Image.FromFile(pth & "fullsize\" & titleholders(i) & ".png")
+            titlepic(i, 0) = Image.FromFile(Path.Combine(pth, "sys\descriptions", i & ".png"))
+            titlepic(i, 1) = Image.FromFile(Path.Combine(pth, "fullsize", titleholders(i) & ".png"))
         Next
 
     End Sub
@@ -81,7 +83,7 @@
         Panel1.VerticalScroll.Visible = True
 
 
-        a = return_pic(pth & "renamed\")
+        a = return_pic(Path.Combine(pth, "renamed"))
         Dim numofel As Integer = a.Length - 1
 
         Dim count As Integer = 0
@@ -135,7 +137,7 @@
         Dim separator() As String = {"%"}
         For i = 0 To NUMBER_OF_TITLES - 1
 
-            FileOpen(4, foldername & i & ".txt", OpenMode.Input)
+            FileOpen(4, Path.Combine(foldername, i & ".txt"), OpenMode.Input)
             Input(4, str)
             FileClose(4)
             Dim data() As String 'тут будет строка из текстбокса, разбитая на одномерный массив с данными
@@ -191,9 +193,9 @@
 
         '  load_images()
 
-        wrestlers = filetoarray_ofpersons(pth & "renamed\ids\ids.txt")
+        wrestlers = filetoarray_ofpersons(Path.Combine(pth, "renamed\ids\ids.txt"))
 
-        titleholders = filetoarray_ofstring(pth & "sys\descriptions\h.txt")
+        titleholders = filetoarray_ofstring(Path.Combine(pth, "sys\descriptions\h.txt"))
 
         For j = 0 To NUMBER_OF_TITLES - 1
             If titleholders(j) = "" Then titleholders(j) = "9999"
@@ -221,8 +223,7 @@
     Private Function return_pic(ByVal path As String) As Object
         Dim k As Integer = -1
 
-        For Each foundFile As String In My.Computer.FileSystem.GetFiles(
-  path)
+        For Each foundFile As String In My.Computer.FileSystem.GetFiles(path)
             k = k + 1
         Next
         Dim a(k) As String
@@ -231,8 +232,7 @@
         Dim l(), tmp As String
 
 
-        For Each foundFile As String In My.Computer.FileSystem.GetFiles(
-path)
+        For Each foundFile As String In My.Computer.FileSystem.GetFiles(path)
             obj(i).imagefile = foundFile
 
             obj(i).id = i
@@ -316,7 +316,7 @@ path)
                 '.Font = SystemFonts.DefaultFont
                 .SizeMode = PictureBoxSizeMode.AutoSize
                 .BorderStyle = BorderStyle.None
-                .ImageLocation = pth & "\sys\cntoff.jpg"
+                .ImageLocation = Path.Combine(pth, "sys\cntoff.jpg")
                 .AutoSize = True
                 .Location = New System.Drawing.Point(left, 0)
             End With
@@ -326,13 +326,13 @@ path)
             'AddHandler selectors(i).MouseLeave, AddressOf picClick
             'AddHandler selectors(i).MouseEnter, AddressOf picClick
         Next
-        selectors(0).ImageLocation = pth & "\sys\cnton.jpg"
+        selectors(0).ImageLocation = Path.Combine(pth, "sys\cnton.jpg")
     End Sub
     Private Sub make_selector_on(ByVal sel As Object)
-        sel.ImageLocation = pth & "\sys\cnton.jpg"
+        sel.ImageLocation = Path.Combine(pth, "sys\cnton.jpg")
     End Sub
     Private Sub make_selector_off(ByVal sel As Object)
-        sel.ImageLocation = pth & "\sys\cntoff.jpg"
+        sel.ImageLocation = Path.Combine(pth, "sys\cntoff.jpg")
     End Sub
 
     Private Sub InitPictureBoxArray(ByVal Count As Integer)
