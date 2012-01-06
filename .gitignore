@@ -1,0 +1,15 @@
+# VS generated files
+
+bin/*
+
+*/bin/*
+*/obj/*
+
+*.suo
+*.csproj.user
+
+# misc files
+
+*.db
+*.patch
+*.log
