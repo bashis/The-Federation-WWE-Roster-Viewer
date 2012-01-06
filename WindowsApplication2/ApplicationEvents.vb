@@ -10,7 +10,7 @@
 
         Private Sub MyApplication_UnhandledException(ByVal sender As Object, ByVal e As Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs) Handles Me.UnhandledException
             e.ExitApplication = _
-           MessageBox.Show(e.Exception.Message & _
+           MessageBox.Show(e.Exception.ToString() & _
                    vbCrLf & "Continue?", "Continue?", _
                    MessageBoxButtons.YesNo, _
                    MessageBoxIcon.Question) _
