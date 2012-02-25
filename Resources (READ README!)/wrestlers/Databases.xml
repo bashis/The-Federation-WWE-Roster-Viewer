@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Databases</name>
+    </assembly>
+    <members>
+        <member name="T:Databases.SimpleDatabase`1">
+            <summary>
+            Represents a simple database that stores
+            arrays of objects of the specified type.
+            </summary>
+            <typeparam name="TObject">
+            Type of the objects to store.
+            </typeparam>
+        </member>
+        <member name="M:Databases.SimpleDatabase`1.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of <see cref="!:Databases.SimpleDatabase"/> class.
+            </summary>
+            <param name="filename">
+            Name of the file to use as storage.
+            </param>
+        </member>
+        <member name="M:Databases.SimpleDatabase`1.Load">
+            <summary>
+            Loads the database from the storage.
+            </summary>
+        </member>
+        <member name="M:Databases.SimpleDatabase`1.Save">
+            <summary>
+            Saves the database to the storage.
+            </summary>
+        </member>
+        <member name="P:Databases.SimpleDatabase`1.Data">
+            <summary>
+            Gets the list of objects inside the database.
+            </summary>
+        </member>
+    </members>
+</doc>

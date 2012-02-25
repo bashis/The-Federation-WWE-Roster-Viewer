@@ -67,6 +67,13 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property _99991() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("_99991", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property background2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("background2", resourceCulture)
@@ -74,9 +81,79 @@ Namespace My.Resources
             End Get
         End Property
         
+        Friend ReadOnly Property bg_free() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_free", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property bg_raw() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_raw", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property bg_roh() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_roh", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property bg_sd() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_sd", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property bg_tna() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("bg_tna", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property cntoff() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cntoff", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property cnton() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cnton", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
         Friend ReadOnly Property mlogx() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("mlogx", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property push2() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("push2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property s1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("s1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        Friend ReadOnly Property SbgTNA() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("SbgTNA", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

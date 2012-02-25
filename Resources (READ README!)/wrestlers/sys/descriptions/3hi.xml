@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTitle_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <title_table>
+    <winner>Drew McIntyre</winner>
+    <looser>Mason Ryan</looser>
+    <w_event>WWE SmackDown</w_event>
+  </title_table>
+  <title_table>
+    <winner>Sin Cara</winner>
+    <looser>Drew McIntyre</looser>
+    <w_event>WWE Smackdown</w_event>
+  </title_table>
+</ArrayOfTitle_table>

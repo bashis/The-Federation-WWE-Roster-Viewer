@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTitle_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <title_table>
+    <winner>Rey Mysterio</winner>
+    <looser>The Big Show</looser>
+    <w_event>WWE TLC 2011</w_event>
+  </title_table>
+  <title_table>
+    <winner>CM Punk</winner>
+    <looser>Rey Mysterio</looser>
+    <w_event>WWE RAW</w_event>
+  </title_table>
+  <title_table>
+    <winner>Rey Mysterio</winner>
+    <looser>CM Punk</looser>
+    <w_event>WWE Royal Rumble 2012</w_event>
+  </title_table>
+</ArrayOfTitle_table>

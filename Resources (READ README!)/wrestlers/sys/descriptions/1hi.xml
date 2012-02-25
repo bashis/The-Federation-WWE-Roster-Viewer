@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTitle_table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <title_table>
+    <winner>Triple H</winner>
+    <looser>Kevin Nash</looser>
+    <w_event>WWE Royal Rumble 2011</w_event>
+  </title_table>
+</ArrayOfTitle_table>
